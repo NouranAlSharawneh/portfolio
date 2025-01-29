@@ -2,6 +2,7 @@ import { ToastContainer } from 'react-toastify';
 import Header from './components/Header';
 import AboutMe from './sections/AboutMe';
 import Hero from './sections/Hero';
+import Skills from './sections/Skills';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         />
         <Hero />
         <AboutMe />
+        <Skills />
       </main>
     </>
   );
