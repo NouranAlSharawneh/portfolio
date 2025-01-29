@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <section className="mx-3 h-dvh sm:mx-auto sm:max-w-[85rem] sm:pl-5">
       <MainNav active={'about-me'} />
-      <div className="grid md:grid-cols-[0.8fr_1.2fr] md:gap-13 md:pt-5">
+      <div className="grid pt-5 md:grid-cols-[0.8fr_1.2fr] md:gap-13">
         <AboutImage />
         <div className="">
           <Introduction />

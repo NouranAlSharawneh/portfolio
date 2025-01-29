@@ -21,10 +21,6 @@ const PortfolioText = () => {
       ref={containerRef}
       className="relative h-full w-full overflow-hidden rounded-xl border-5 border-gray-900 bg-gradient-to-r from-red-500 via-green-500 to-blue-500"
     >
-      {/* <div
-      ref={containerRef}
-      className="relative h-full w-full overflow-hidden rounded-xl border-5 border-gray-900 bg-[linear-gradient(to_right,red,orange,#10B910FF,#3A3AFFFF,#701591FF)]"
-    > */}
       <h1 className="font-accent h-full w-full text-7xl text-white md:text-[12rem]">
         {/* Individual letters */}
         {Array.from('Portfolio').map((char, index) => (

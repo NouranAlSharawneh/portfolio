@@ -4,30 +4,29 @@ import { MdEmail } from 'react-icons/md';
 import { IoLogoWhatsapp, IoMdOpen } from 'react-icons/io';
 import { IoCopyOutline } from 'react-icons/io5';
 import { FcPhoneAndroid } from 'react-icons/fc';
+import { toast } from 'react-toastify';
+import Title from './Title';
 
 const GetInTouch = () => {
   return (
     <div className="ml-1 flex flex-col justify-between pt-3 sm:mx-auto sm:max-w-[85rem] md:gap-3">
-      <div className="flex items-center justify-between gap-2 pb-5 md:gap-3">
-        <p className="text-2xl font-semibold text-gray-900 md:text-6xl">
-          Get In Touch
-        </p>
-
-        <ArrowDownShort />
-      </div>
+      <Title title="Get In Touch" />
       <div className="flex flex-col items-center justify-between gap-5 md:flex-row md:gap-0">
-        <div className="grid w-70 gap-4 rounded-3xl bg-gray-900 px-4 py-3 md:w-62">
-          <MdEmail fill="white" size={40} />
+        <div className="grid w-70 gap-6 rounded-3xl bg-gray-900 px-4 py-3 md:w-62 md:gap-4">
+          <MdEmail fill="white" size={45} />
           <div className="pt-9 text-gray-200">
             <hr />
             <div className="flex cursor-pointer items-center justify-between pt-3">
               <button
-                className="flex items-center justify-between gap-1 rounded-md bg-gray-800 px-2 py-1 pt-2 text-[11px] hover:bg-gray-700"
-                onClick={() =>
+                className="flex items-center justify-between gap-x-0.5 rounded-md bg-gray-800 px-2 py-1 pt-2 text-[12px] hover:bg-gray-700 md:text-[11px]"
+                onClick={() => {
                   navigator.clipboard.writeText(
                     'nouran-al-sharawneh@hotmail.com',
-                  )
-                }
+                  );
+                  toast(`✉️ Email Copied!`, {
+                    position: 'bottom-right',
+                  });
+                }}
               >
                 <IoCopyOutline />
                 Copy Email
@@ -38,13 +37,13 @@ const GetInTouch = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                nouran-alsharawneh@hotmail.com
+                nouran-al-sharawneh@hotmail.com
               </a>
             </div>
           </div>
         </div>
-        <div className="grid w-70 gap-4 rounded-3xl bg-blue-700 px-4 py-3 md:w-62">
-          <ImLinkedin2 fill="white" size={40} />
+        <div className="grid w-70 gap-6 rounded-3xl bg-blue-700 px-4 py-3 md:w-62 md:gap-4">
+          <ImLinkedin2 fill="white" size={45} />
           <div className="pt-9 text-gray-200">
             <hr />
             <div className="flex cursor-pointer items-center justify-between pt-3">
@@ -68,16 +67,28 @@ const GetInTouch = () => {
             </div>
           </div>
         </div>
-        <div className="grid w-70 gap-4 rounded-3xl bg-green-600 px-4 py-3 md:w-62">
-          <IoLogoWhatsapp fill="white" size={40} />
+        <div className="grid w-70 gap-6 rounded-3xl bg-green-600 px-4 py-3 md:w-62 md:gap-4">
+          <IoLogoWhatsapp fill="white" size={45} />
           <div className="pt-9 text-gray-200">
             <hr />
             <div className="flex cursor-pointer items-center justify-between pt-3">
-              <p className="flex items-center justify-between gap-1 rounded-md bg-green-800 px-2 py-1 text-[12px] hover:bg-green-700">
+              <a
+                className="flex items-center justify-between gap-1 rounded-md bg-green-800 px-2 py-1 text-[12px] hover:bg-green-700"
+                href="https://wa.me/966507688769"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FcPhoneAndroid />
                 Contact Me
-              </p>
-              <p className="text-xs tracking-widest">0507688769</p>
+              </a>
+              <a
+                href="https://wa.me/966507688769"
+                className="text-xs tracking-widest"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                0507688769
+              </a>
             </div>
           </div>
         </div>
