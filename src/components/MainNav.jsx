@@ -1,12 +1,40 @@
-import { BsArrowDownCircle } from 'react-icons/bs';
+import { GrDocumentUser } from 'react-icons/gr';
+import Logo from './Logo';
 
-const MainNav = () => {
+const MainNav = ({ active }) => {
   return (
-    <div className="mx-3 flex items-center justify-end gap-2 border-b border-gray-800 py-3 sm:mx-auto sm:max-w-[85rem] md:gap-3 md:border-t">
-      <p className="text-xl font-semibold text-gray-900 md:text-4xl">
-        See More
-      </p>
-      <BsArrowDownCircle className="ml-2 cursor-help text-2xl font-thin text-gray-800 transition-all duration-400 ease-in-out hover:translate-y-1 md:text-4xl" />
+    <div className="ml-1 flex items-center justify-between gap-2 border-b border-gray-600 pt-3 pb-1.5 sm:mx-auto sm:max-w-[85rem] sm:pl-5 md:ml-3 md:gap-3">
+      <div className="flex items-center gap-3 md:gap-5">
+        <Logo />
+        <div>
+          <nav>
+            <ul className="flex items-center gap-3 pl-3 text-[18px] text-gray-700 md:gap-10 md:pl-5 md:text-xl">
+              {['About Me', 'Skills', 'Projects'].map((item) => (
+                <li key={item}>
+                  <a
+                    href="#"
+                    className={
+                      active === item.toLowerCase().replace(' ', '-')
+                        ? 'rounded-b border-b-4 border-gray-900 pb-2 md:px-5'
+                        : 'text-gray-500'
+                    }
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <span className="h-6 w-6 rounded-full bg-gray-800 pt-1.5 pl-1 md:h-9 md:w-9 md:pt-2 md:pl-1.5">
+        <GrDocumentUser
+          className="text-sm font-thin text-white md:text-xl"
+          cursor="pointer"
+          title="download resume"
+        />
+      </span>
     </div>
   );
 };

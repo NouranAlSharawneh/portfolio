@@ -4,7 +4,7 @@ import { LuArrowDownRight } from 'react-icons/lu';
 
 const Hero = () => (
   <>
-    <div className="md: mx-3 grid grid-rows-[1.5fr_1fr] py-3 sm:mx-auto sm:max-w-[85rem] md:h-[80dvh] md:grid-cols-[0.3fr_1.7fr] md:grid-rows-1 md:gap-14 md:py-5">
+    <div className="mx-3 grid grid-rows-[1.5fr_1fr] py-3 sm:mx-auto sm:max-w-[85rem] md:h-[80dvh] md:grid-cols-[0.3fr_1.7fr] md:grid-rows-1 md:gap-14 md:py-5">
       <div className="order-1 h-full md:order-2">
         <PortfolioText />
       </div>

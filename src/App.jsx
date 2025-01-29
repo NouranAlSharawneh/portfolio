@@ -1,4 +1,5 @@
 import Header from './components/Header';
+import AboutMe from './sections/AboutMe';
 import Hero from './sections/Hero';
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
       <Header />
       <main>
         <Hero />
+        <AboutMe />
       </main>
     </>
   );
