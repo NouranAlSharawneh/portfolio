@@ -3,6 +3,7 @@ import ArrowDownShort from '../ui/ArrowDownShort';
 import { MdEmail } from 'react-icons/md';
 import { IoLogoWhatsapp, IoMdOpen } from 'react-icons/io';
 import { IoCopyOutline } from 'react-icons/io5';
+import { FcPhoneAndroid } from 'react-icons/fc';
 
 const GetInTouch = () => {
   return (
@@ -73,7 +74,7 @@ const GetInTouch = () => {
             <hr />
             <div className="flex cursor-pointer items-center justify-between pt-3">
               <p className="flex items-center justify-between gap-1 rounded-md bg-green-800 px-2 py-1 text-[12px] hover:bg-green-700">
-                <IoMdOpen />
+                <FcPhoneAndroid />
                 Contact Me
               </p>
               <p className="text-xs tracking-widest">0507688769</p>
