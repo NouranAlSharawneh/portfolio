@@ -1,11 +1,13 @@
-import Header from "./components/Header";
-import Hero from "./sections/Hero";
+import Header from './components/Header';
+import Hero from './sections/Hero';
 
 const App = () => {
   return (
     <>
       <Header />
-      <Hero />
+      <main>
+        <Hero />
+      </main>
     </>
   );
 };
