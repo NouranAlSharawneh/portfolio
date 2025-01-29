@@ -5,12 +5,14 @@ import GetInTouch from '../ui/GetInTouch';
 
 const AboutMe = () => {
   return (
-    <section className="mx-3 h-dvh sm:mx-auto sm:max-w-[85rem]">
+    <section className="mx-3 h-dvh sm:mx-auto sm:max-w-[85rem] sm:pl-5">
       <MainNav active={'about-me'} />
-      <div>
-        <Introduction />
+      <div className="grid md:grid-cols-[0.8fr_1.2fr] md:gap-13 md:pt-5">
         <AboutImage />
-        <GetInTouch />
+        <div className="">
+          <Introduction />
+          <GetInTouch />
+        </div>
       </div>
     </section>
   );

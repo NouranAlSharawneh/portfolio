@@ -3,7 +3,7 @@ import Logo from './Logo';
 
 const MainNav = ({ active }) => {
   return (
-    <div className="ml-1 flex items-center justify-between gap-2 border-b border-gray-600 pt-3 pb-1.5 sm:mx-auto sm:max-w-[85rem] sm:pl-5 md:ml-3 md:gap-3">
+    <div className="ml-1 flex items-center justify-between gap-2 border-b border-gray-600 pt-3 pb-1.5 sm:mx-auto sm:max-w-[85rem] md:gap-3">
       <div className="flex items-center gap-3 md:gap-5">
         <Logo />
         <div>
@@ -15,7 +15,7 @@ const MainNav = ({ active }) => {
                     href="#"
                     className={
                       active === item.toLowerCase().replace(' ', '-')
-                        ? 'rounded-b border-b-4 border-gray-900 pb-2 md:px-5'
+                        ? 'rounded-b-sm border-b-4 border-gray-900 pb-2 md:px-5'
                         : 'text-gray-500'
                     }
                   >
