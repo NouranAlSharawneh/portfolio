@@ -1,9 +1,13 @@
 import MainNav from '../components/MainNav';
 import SkillsCat from '../components/SkillsCat';
+import MointerImg from '../../public/assets/monitor.png';
 
 const Skills = () => {
   return (
-    <section className="mx-3 sm:mx-auto sm:max-w-[85rem] sm:pl-5">
+    <section
+      id="skills"
+      className="mx-3 border-b border-gray-600 pb-5 sm:mx-auto sm:max-w-[85rem] sm:pl-5"
+    >
       <MainNav active={'skills'} />
       <div className="grid grid-cols-1 grid-rows-2 gap-9 pt-5 pl-1 md:grid-cols-[1.5fr_0.5fr] md:grid-rows-1">
         {/* right side */}
@@ -25,21 +29,32 @@ const Skills = () => {
                 <p>(GPA 3.89/4.00)</p>
               </div>
               <img
-                src="../../public/assets/monitor.png"
-                className="absolute right-[-10px] bottom-[-20%] h-50 w-40 md:bottom-[-35%] md:h-90 md:w-80"
+                src={MointerImg}
+                className="absolute right-[-10px] bottom-[-20%] h-50 w-40 md:right-[30px] md:bottom-[-35%] md:h-130 md:w-130 md:rotate-[-10deg]"
               />
             </div>
           </div>
-          <div className="bg-orange-500">
-            <h4>Education</h4>
-            <p>Price Mohammed Bin Fahd Uni.</p>
+          <div className="grid grid-rows-[1fr_auto] items-center rounded-2xl bg-orange-500 px-5 text-gray-900">
+            <div className="m-auto flex items-center justify-center">
+              <img
+                src="../../public/assets/windows.jpg"
+                alt="windows 98 wallpaper"
+                className="h-auto w-[80%] rounded-2xl"
+              />
+            </div>
+
+            <h4 className="text-center text-7xl font-extrabold md:text-left md:text-8xl">
+              Languages
+            </h4>
             <div>
-              <p>BSc Software Engineering</p>
-              <p>2020 - 2024</p>
+              <img src="" alt="" />
+              <div className="flex justify-center gap-4"></div>
             </div>
           </div>
-          <div className="bg-green-600">
-            <h4>Education</h4>
+          <div className="grid rounded-2xl bg-green-600 px-5 text-gray-900">
+            <h4 className="text-center text-7xl font-extrabold md:text-left md:text-9xl">
+              Languages
+            </h4>
             <p>Price Mohammed Bin Fahd Uni.</p>
             <div>
               <p>BSc Software Engineering</p>

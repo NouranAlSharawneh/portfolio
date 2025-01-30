@@ -6,7 +6,18 @@ const HeroFooter = () => {
       <p className="text-xl font-semibold text-gray-900 md:text-4xl">
         See More
       </p>
-      <ArrowDown />
+      <a
+        href="#about"
+        onClick={(e) => {
+          e.preventDefault();
+          window.scrollBy({
+            top: window.innerHeight - 1,
+            behavior: 'smooth',
+          });
+        }}
+      >
+        <ArrowDown />
+      </a>
     </div>
   );
 };

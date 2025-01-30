@@ -12,7 +12,19 @@ const MainNav = ({ active }) => {
               {['About Me', 'Skills', 'Projects'].map((item) => (
                 <li key={item}>
                   <a
-                    href="#"
+                    href={`#${item.toLowerCase().replace(' ', '-')}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.getElementById(
+                        item.toLowerCase().replace(' ', '-'),
+                      );
+                      if (element) {
+                        window.scrollTo({
+                          top: element.offsetTop - 1,
+                          behavior: 'smooth',
+                        });
+                      }
+                    }}
                     className={
                       active === item.toLowerCase().replace(' ', '-')
                         ? 'rounded-b-sm border-b-4 border-gray-900 pb-2 md:px-5'
