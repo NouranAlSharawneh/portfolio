@@ -10,7 +10,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="text-blue-500 hover:underline"
         >
-          project link
+          project repo
         </a>
       </p>
     </footer>

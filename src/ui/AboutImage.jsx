@@ -4,6 +4,7 @@ const AboutImage = () => {
     <div
       className="w-full rounded-3xl bg-gray-500 bg-cover bg-center bg-no-repeat px-7 py-4 grayscale filter"
       style={{ backgroundImage: `url(${AboutImg})` }}
+      loading="lazy"
     >
       <div className="flex h-full flex-col gap-50 text-white md:justify-between">
         <h3 className="w-60 text-7xl">

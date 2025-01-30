@@ -21,7 +21,7 @@ const Projects = () => {
               key={project.id}
               className="sticky z-0 overflow-hidden rounded-3xl bg-gray-950 px-5 pt-5 after:pointer-events-none after:absolute after:inset-0 after:z-10 after:rounded-3xl after:outline-2 after:-outline-offset-2 after:outline-gray-600 after:content-['']"
               style={{
-                top: `calc(20px + ${projectIndex * 60}px)`,
+                top: `calc(10px + ${projectIndex * 40}px)`,
               }}
             >
               {/* <div className="absolute inset-0 -z-1 rounded-3xl bg-gray-800" /> */}
@@ -51,27 +51,31 @@ const Projects = () => {
                         key={index}
                         className="mt-8 flex flex-col gap-2 md:flex-row lg:gap-10"
                       >
-                        <button
-                          key={link.liveLink.url}
-                          className="h-12 w-full grow items-center justify-center gap-2 rounded-xl bg-gray-100 font-semibold tracking-wide text-gray-950 md:w-auto md:px-8"
-                        >
-                          <a
-                            href={link.liveLink.url}
-                            className="inline-flex items-center justify-center gap-2"
-                          >
-                            <span>{link.liveLink.textBtn}</span>
-                            <GoArrowUpRight />
-                          </a>
-                        </button>
-                        <button className="h-12 w-full grow items-center justify-center gap-2 rounded-xl bg-gray-100 font-semibold tracking-wide text-gray-950 md:w-auto md:px-8">
+                        <button className="h-12 w-full grow cursor-pointer items-center justify-center gap-2 rounded-xl bg-gray-100 font-semibold tracking-wide text-gray-950 transition-colors duration-500 ease-in-out md:flex md:w-1/2 md:px-8">
                           <a
                             href={link.githubLink.url}
                             className="inline-flex items-center justify-center gap-2"
+                            target="_blank"
                           >
                             <span>{link.githubLink.textBtn}</span>
                             <GoArrowUpRight />
                           </a>
                         </button>
+                        {link.liveLink.textBtn !== '--' && (
+                          <button
+                            key={link.liveLink.url}
+                            className="h-12 w-full grow cursor-pointer items-center justify-center gap-2 rounded-xl bg-gray-100 font-semibold tracking-wide text-gray-950 transition-colors duration-500 ease-in-out hover:bg-gray-200 md:flex md:w-1/2 md:px-8"
+                          >
+                            <a
+                              href={link.liveLink.url}
+                              target="_blank"
+                              className="inline-flex items-center justify-center gap-2"
+                            >
+                              <span>{link.liveLink.textBtn}</span>
+                              <GoArrowUpRight />
+                            </a>
+                          </button>
+                        )}
                       </div>
                     ))}
                   </div>

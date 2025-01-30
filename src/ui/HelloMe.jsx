@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import AvatorImg from '../../public/assets/me.png';
 
 const HelloMe = () => {
   const [showText, setShowText] = useState(false);
@@ -12,7 +13,7 @@ const HelloMe = () => {
   return (
     <div className="relative grid h-full rounded-2xl bg-gray-300 px-5">
       <img
-        src="../../public/assets/me.png"
+        src={AvatorImg}
         className="mt-auto h-70 w-auto cursor-pointer"
         alt=""
         onClick={handleMouseEnter}
