@@ -1,5 +1,6 @@
 import { GrDocumentUser } from 'react-icons/gr';
 import Logo from './Logo';
+import { BsGithub } from 'react-icons/bs';
 
 const MainNav = ({ active }) => {
   return (
@@ -40,13 +41,20 @@ const MainNav = ({ active }) => {
         </div>
       </div>
 
-      <span className="h-6 w-6 rounded-full bg-gray-800 pt-1.5 pl-1 md:h-9 md:w-9 md:pt-2 md:pl-1.5">
-        <GrDocumentUser
-          className="text-sm font-thin text-white md:text-xl"
-          cursor="pointer"
-          title="download resume"
+      <div className="flex items-center gap-2">
+        <BsGithub
+          size={24}
+          className="cursor-pointer text-gray-800 md:h-9 md:w-9"
+          onClick={() => window.open('https://github.com/NouranAlSharawneh')}
         />
-      </span>
+        <span className="h-6 w-6 rounded-full bg-gray-800 pt-1.5 pl-1 md:h-9 md:w-9 md:pt-2 md:pl-1.5">
+          <GrDocumentUser
+            className="text-sm font-thin text-white md:text-xl"
+            cursor="pointer"
+            title="download resume"
+          />
+        </span>
+      </div>
     </div>
   );
 };

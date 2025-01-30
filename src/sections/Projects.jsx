@@ -9,16 +9,20 @@ const Projects = () => {
       projectName: 'usePopCorn',
       projectImg: usePopcornImage,
       projectPoints: [
-        {
-          point1: 'A simple movie site that allows you to search for movies',
-          point2: 'Build with React.js',
-          point3: 'Deployed on Vercel',
-        },
+        'A simple movie site that allows you to search for movies',
+        'Build with React.js',
+        'Deployed on Vercel',
       ],
       links: [
         {
-          liveLink: 'https://usepopcorn.netlify.app/',
-          githubLink: 'https://github.com/abhishekbhagwat/usePopCorn',
+          liveLink: {
+            textBtn: 'Live Url',
+            url: 'https://usepopcorn.netlify.app/',
+          },
+          githubLink: {
+            textBtn: 'Github Repo',
+            url: 'https://usepopcorn.netlify.app/',
+          },
         },
       ],
     },
@@ -26,17 +30,20 @@ const Projects = () => {
       projectName: 'Fast Pizza',
       projectImg: FastPizzaImage,
       projectPoints: [
-        {
-          point1:
-            'A simple e-commerce site that allows you to search for pizzas',
-          point2: 'Build with React.js',
-          point3: 'Deployed on Vercel',
-        },
+        'A simple e-commerce site that allows you to search for pizzas',
+        'Build with React.js',
+        'Deployed on Vercel',
       ],
       links: [
         {
-          liveLink: 'https://fast-pizza.netlify.app/',
-          githubLink: 'https://github.com/abhishekbhagwat/fast-pizza',
+          liveLink: {
+            textBtn: 'Live Url',
+            url: 'https://usepopcorn.netlify.app/',
+          },
+          githubLink: {
+            textBtn: 'Github Repo',
+            url: 'https://usepopcorn.netlify.app/',
+          },
         },
       ],
     },
@@ -44,17 +51,20 @@ const Projects = () => {
       projectName: 'WorldWise',
       projectImg: WorldWiseImage,
       projectPoints: [
-        {
-          point1:
-            'A simple e-commerce site that allows you to search for products',
-          point2: 'Build with React.js',
-          point3: 'Deployed on Vercel',
-        },
+        'A simple e-commerce site that allows you to search for products',
+        'Build with React.js',
+        'Deployed on Vercel',
       ],
       links: [
         {
-          liveLink: 'https://worldwise.netlify.app/',
-          githubLink: 'https://github.com/abhishekbhagwat/world-wise',
+          liveLink: {
+            textBtn: 'Live Url',
+            url: 'https://usepopcorn.netlify.app/',
+          },
+          githubLink: {
+            textBtn: 'Github Repo',
+            url: 'https://usepopcorn.netlify.app/',
+          },
         },
       ],
     },
@@ -65,7 +75,7 @@ const Projects = () => {
       className="mx-3 border-b border-gray-600 pb-15 sm:mx-auto sm:max-w-[85rem] sm:pl-5"
     >
       <MainNav active={'projects'} />
-      <div>
+      <div className="pl-1">
         <div className="mt-10 flex flex-col">
           {portfolioProjects.map((project) => (
             <div key={project.projectName}>
@@ -74,14 +84,24 @@ const Projects = () => {
                 <hr />
                 <ul>
                   {project.projectPoints.map((point) => (
-                    <li key={point.point1}>{point.point1}</li>
+                    <li key={point}>{point}</li>
                   ))}
                 </ul>
-                <ul>
+                <div>
                   {project.links.map((link) => (
-                    <li key={link.liveLink}>{link.liveLink}</li>
+                    <>
+                      <button key={link.liveLink.url}>
+                        <a href={link.liveLink.url}>{link.liveLink.textBtn}</a>
+                      </button>
+                      <button key={link.githubLink.url}>
+                        <a href={link.githubLink.url}>
+                          {link.githubLink.textBtn}
+                        </a>
+                      </button>
+                    </>
                   ))}
-                </ul>
+                </div>
+
                 <img src={project.projectImg} alt={project.projectName} />
               </div>
             </div>

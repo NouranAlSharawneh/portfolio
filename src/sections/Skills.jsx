@@ -30,7 +30,7 @@ const Skills = () => {
               </div>
               <img
                 src={MointerImg}
-                className="absolute right-[-10px] bottom-[-20%] h-50 w-40 md:right-[30px] md:bottom-[-35%] md:h-130 md:w-130 md:rotate-[-10deg]"
+                className="absolute right-[-10px] bottom-[-22%] h-50 w-40 rotate-[-10deg] md:right-[30px] md:bottom-[-35%] md:h-130 md:w-130"
               />
             </div>
           </div>
