@@ -14,10 +14,9 @@ const AboutImage = () => {
           </span>
         </h3>
         <p className="text-right text-sm text-balance text-gray-400">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
-          accusamus ipsa atque voluptatum id, animi, tempora iste quae alias vel
-          officia qui facilis quos inventore? Aliquid, natus earum? Eligendi,
-          libero?
+          I consider myself a hardworking problem solver who constantly seeks
+          new skills and explores new technologies to deliver high-quality
+          solutions.
         </p>
       </div>
     </div>

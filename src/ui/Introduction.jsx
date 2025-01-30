@@ -26,10 +26,12 @@ const Introduction = () => {
         </h2>
         <div className="flex flex-col items-center justify-between md:flex-row md:gap-5">
           <p className="text-wrap text-gray-600 md:text-[19px]">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
-            doloremque fuga blanditiis harum placeat consequatur eius sunt
-            cumque enim provident odio, perspiciatis atque dolorum perferendis,
-            natus, ullam sed impedit laboriosam.
+            Hi there! I'm Nouran, a 22-year-old Software Engineer with a passion
+            for web and mobile app development. I enjoy solving complex problems
+            and continuously learning new technologies to build innovative
+            solutions. I am currently seeking opportunities in software
+            development to further enhance my skills and contribute to impactful
+            projects.
           </p>
           <img
             className="h-40 w-40 md:h-30 md:w-30"

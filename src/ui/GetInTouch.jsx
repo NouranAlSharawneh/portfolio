@@ -12,7 +12,7 @@ const GetInTouch = () => {
     <div className="ml-1 flex flex-col justify-between pt-3 sm:mx-auto sm:max-w-[85rem] md:gap-3">
       <Title title="Get In Touch" />
       <div className="flex flex-col items-center justify-between gap-5 md:flex-row md:gap-0">
-        <div className="grid w-70 gap-6 rounded-3xl bg-gray-900 px-4 py-3 md:w-62 md:gap-4">
+        <div className="grid w-70 gap-6 rounded-3xl bg-gray-950 px-4 py-3 md:w-62 md:gap-4">
           <MdEmail fill="white" size={45} />
           <div className="pt-9 text-gray-200">
             <hr />

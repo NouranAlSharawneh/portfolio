@@ -2,6 +2,8 @@ import MainNav from '../components/MainNav';
 import usePopcornImage from '../../public/assets/projects/usePopCorn.png';
 import FastPizzaImage from '../../public/assets/projects/FastPizza.png';
 import WorldWiseImage from '../../public/assets/projects/WorldWise.png';
+import { FaCircleCheck } from 'react-icons/fa6';
+import { GoArrowUpRight } from 'react-icons/go';
 
 const Projects = () => {
   const portfolioProjects = [
@@ -9,7 +11,7 @@ const Projects = () => {
       projectName: 'usePopCorn',
       projectImg: usePopcornImage,
       projectPoints: [
-        'A simple movie site that allows you to search for movies',
+        'A simple movie site that es',
         'Build with React.js',
         'Deployed on Vercel',
       ],
@@ -30,7 +32,7 @@ const Projects = () => {
       projectName: 'Fast Pizza',
       projectImg: FastPizzaImage,
       projectPoints: [
-        'A simple e-commerce site that allows you to search for pizzas',
+        'A simple e-commerce site ',
         'Build with React.js',
         'Deployed on Vercel',
       ],
@@ -51,7 +53,7 @@ const Projects = () => {
       projectName: 'WorldWise',
       projectImg: WorldWiseImage,
       projectPoints: [
-        'A simple e-commerce site that allows you to search for products',
+        'A simple e-commerce site ',
         'Build with React.js',
         'Deployed on Vercel',
       ],
@@ -75,34 +77,80 @@ const Projects = () => {
       className="mx-3 border-b border-gray-600 pb-15 sm:mx-auto sm:max-w-[85rem] sm:pl-5"
     >
       <MainNav active={'projects'} />
-      <div className="pl-1">
-        <div className="mt-10 flex flex-col">
-          {portfolioProjects.map((project) => (
-            <div key={project.projectName}>
-              <div>
-                <h3>{project.projectName}</h3>
-                <hr />
-                <ul>
-                  {project.projectPoints.map((point) => (
-                    <li key={point}>{point}</li>
-                  ))}
-                </ul>
-                <div>
-                  {project.links.map((link) => (
-                    <>
-                      <button key={link.liveLink.url}>
-                        <a href={link.liveLink.url}>{link.liveLink.textBtn}</a>
-                      </button>
-                      <button key={link.githubLink.url}>
-                        <a href={link.githubLink.url}>
-                          {link.githubLink.textBtn}
-                        </a>
-                      </button>
-                    </>
-                  ))}
-                </div>
 
-                <img src={project.projectImg} alt={project.projectName} />
+      <div className="pl-1">
+        <span className="block pt-4 pb-3 text-3xl font-bold text-gray-800 md:text-7xl">
+          Projects
+        </span>
+        <div className="flex flex-col gap-20">
+          {portfolioProjects.map((project, projectIndex) => (
+            <div
+              key={project.projectName}
+              className="sticky z-0 overflow-hidden rounded-3xl bg-gray-950 px-5 pt-5 after:pointer-events-none after:absolute after:inset-0 after:z-10 after:rounded-3xl after:outline-2 after:-outline-offset-2 after:outline-gray-600 after:content-['']"
+              style={{
+                top: `calc(64px + ${projectIndex * 60}px)`,
+              }}
+            >
+              {/* <div className="absolute inset-0 -z-1 rounded-3xl bg-gray-800" /> */}
+              <div className="md:grid md:grid-cols-2">
+                <div className="lg:pt-10 lg:pl-10">
+                  <div className="flex-col px-3">
+                    <div className="inline-flex text-gray-100">
+                      <h3 className="text-4xl font-bold tracking-widest lg:text-6xl">
+                        {project.projectName}
+                      </h3>
+                    </div>
+                    <hr className="mt-4 border-t-2 border-gray-200/5" />
+                    <ul className="mt-4 flex flex-col gap-4">
+                      {project.projectPoints.map((point) => (
+                        <li
+                          key={point}
+                          className="flex items-center gap-2 text-sm tracking-wide text-gray-300 lg:gap-4 lg:text-xl"
+                        >
+                          <FaCircleCheck size={15} />
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="mt-8 flex flex-col gap-2 md:flex-row lg:gap-10">
+                      {project.links.map((link) => (
+                        <>
+                          <button
+                            key={link.liveLink.url}
+                            className="h-12 w-full grow items-center justify-center gap-2 rounded-xl bg-gray-100 font-semibold tracking-wide text-gray-950 md:w-auto md:px-8"
+                          >
+                            <a
+                              href={link.liveLink.url}
+                              className="inline-flex items-center justify-center gap-2"
+                            >
+                              <span>{link.liveLink.textBtn}</span>
+                              <GoArrowUpRight />
+                            </a>
+                          </button>
+                          <button
+                            key={link.githubLink.url}
+                            className="h-12 w-full grow items-center justify-center gap-2 rounded-xl bg-gray-100 font-semibold tracking-wide text-gray-950 md:w-auto md:px-8"
+                          >
+                            <a
+                              href={link.githubLink.url}
+                              className="inline-flex items-center justify-center gap-2"
+                            >
+                              <span>{link.githubLink.textBtn}</span>
+                              <GoArrowUpRight />
+                            </a>
+                          </button>
+                        </>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <img
+                    src={project.projectImg}
+                    alt={project.projectName}
+                    className="mt-8 -mb-4 lg:ml-22"
+                  />
+                </div>
               </div>
             </div>
           ))}
