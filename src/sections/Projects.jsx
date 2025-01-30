@@ -1,80 +1,13 @@
 import MainNav from '../components/MainNav';
-import usePopcornImage from '../../public/assets/projects/usePopCorn.png';
-import FastPizzaImage from '../../public/assets/projects/FastPizza.png';
-import WorldWiseImage from '../../public/assets/projects/WorldWise.png';
 import { FaCircleCheck } from 'react-icons/fa6';
 import { GoArrowUpRight } from 'react-icons/go';
+import { portfolioProjects } from '../data/projects';
 
 const Projects = () => {
-  const portfolioProjects = [
-    {
-      projectName: 'usePopCorn',
-      projectImg: usePopcornImage,
-      projectPoints: [
-        'A simple movie site that es',
-        'Build with React.js',
-        'Deployed on Vercel',
-      ],
-      links: [
-        {
-          liveLink: {
-            textBtn: 'Live Url',
-            url: 'https://usepopcorn.netlify.app/',
-          },
-          githubLink: {
-            textBtn: 'Github Repo',
-            url: 'https://usepopcorn.netlify.app/',
-          },
-        },
-      ],
-    },
-    {
-      projectName: 'Fast Pizza',
-      projectImg: FastPizzaImage,
-      projectPoints: [
-        'A simple e-commerce site ',
-        'Build with React.js',
-        'Deployed on Vercel',
-      ],
-      links: [
-        {
-          liveLink: {
-            textBtn: 'Live Url',
-            url: 'https://usepopcorn.netlify.app/',
-          },
-          githubLink: {
-            textBtn: 'Github Repo',
-            url: 'https://usepopcorn.netlify.app/',
-          },
-        },
-      ],
-    },
-    {
-      projectName: 'WorldWise',
-      projectImg: WorldWiseImage,
-      projectPoints: [
-        'A simple e-commerce site ',
-        'Build with React.js',
-        'Deployed on Vercel',
-      ],
-      links: [
-        {
-          liveLink: {
-            textBtn: 'Live Url',
-            url: 'https://usepopcorn.netlify.app/',
-          },
-          githubLink: {
-            textBtn: 'Github Repo',
-            url: 'https://usepopcorn.netlify.app/',
-          },
-        },
-      ],
-    },
-  ];
   return (
     <section
       id="projects"
-      className="mx-3 border-b border-gray-600 pb-15 sm:mx-auto sm:max-w-[85rem] sm:pl-5"
+      className="mx-3 pb-20 sm:mx-auto sm:max-w-[85rem] sm:pl-5"
     >
       <MainNav active={'projects'} />
 
@@ -85,10 +18,10 @@ const Projects = () => {
         <div className="flex flex-col gap-20">
           {portfolioProjects.map((project, projectIndex) => (
             <div
-              key={projectIndex}
+              key={project.id}
               className="sticky z-0 overflow-hidden rounded-3xl bg-gray-950 px-5 pt-5 after:pointer-events-none after:absolute after:inset-0 after:z-10 after:rounded-3xl after:outline-2 after:-outline-offset-2 after:outline-gray-600 after:content-['']"
               style={{
-                top: `calc(64px + ${projectIndex * 60}px)`,
+                top: `calc(20px + ${projectIndex * 60}px)`,
               }}
             >
               {/* <div className="absolute inset-0 -z-1 rounded-3xl bg-gray-800" /> */}
@@ -112,33 +45,35 @@ const Projects = () => {
                         </li>
                       ))}
                     </ul>
-                    <div className="mt-8 flex flex-col gap-2 md:flex-row lg:gap-10">
-                      {project.links.map((link) => (
-                        <>
-                          <button
-                            key={link.liveLink.url}
-                            className="h-12 w-full grow items-center justify-center gap-2 rounded-xl bg-gray-100 font-semibold tracking-wide text-gray-950 md:w-auto md:px-8"
+
+                    {project.links.map((link, index) => (
+                      <div
+                        key={index}
+                        className="mt-8 flex flex-col gap-2 md:flex-row lg:gap-10"
+                      >
+                        <button
+                          key={link.liveLink.url}
+                          className="h-12 w-full grow items-center justify-center gap-2 rounded-xl bg-gray-100 font-semibold tracking-wide text-gray-950 md:w-auto md:px-8"
+                        >
+                          <a
+                            href={link.liveLink.url}
+                            className="inline-flex items-center justify-center gap-2"
                           >
-                            <a
-                              href={link.liveLink.url}
-                              className="inline-flex items-center justify-center gap-2"
-                            >
-                              <span>{link.liveLink.textBtn}</span>
-                              <GoArrowUpRight />
-                            </a>
-                          </button>
-                          <button className="h-12 w-full grow items-center justify-center gap-2 rounded-xl bg-gray-100 font-semibold tracking-wide text-gray-950 md:w-auto md:px-8">
-                            <a
-                              href={link.githubLink.url}
-                              className="inline-flex items-center justify-center gap-2"
-                            >
-                              <span>{link.githubLink.textBtn}</span>
-                              <GoArrowUpRight />
-                            </a>
-                          </button>
-                        </>
-                      ))}
-                    </div>
+                            <span>{link.liveLink.textBtn}</span>
+                            <GoArrowUpRight />
+                          </a>
+                        </button>
+                        <button className="h-12 w-full grow items-center justify-center gap-2 rounded-xl bg-gray-100 font-semibold tracking-wide text-gray-950 md:w-auto md:px-8">
+                          <a
+                            href={link.githubLink.url}
+                            className="inline-flex items-center justify-center gap-2"
+                          >
+                            <span>{link.githubLink.textBtn}</span>
+                            <GoArrowUpRight />
+                          </a>
+                        </button>
+                      </div>
+                    ))}
                   </div>
                 </div>
                 <div>

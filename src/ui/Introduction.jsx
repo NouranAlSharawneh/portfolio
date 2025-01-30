@@ -33,11 +33,14 @@ const Introduction = () => {
             development to further enhance my skills and contribute to impactful
             projects.
           </p>
-          <img
-            className="h-40 w-40 rounded-full bg-gradient-to-t from-gray-800 to-gray-400 md:h-30 md:w-30"
-            src={AvatarImg}
-            alt="avatar"
-          />
+
+          <div className="mt-10 flex h-50 w-70 shrink-0 items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-t from-gray-800 to-gray-400 transition-transform duration-700 ease-in-out md:mt-0 md:h-40 md:w-40 md:rounded-full">
+            <img
+              className="h-full w-full cursor-zoom-in object-cover transition-transform duration-300 hover:scale-110"
+              src={AvatarImg}
+              alt="avatar"
+            />
+          </div>
         </div>
       </div>
     </div>

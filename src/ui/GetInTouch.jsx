@@ -18,7 +18,7 @@ const GetInTouch = () => {
             <hr />
             <div className="flex cursor-pointer items-center justify-between pt-3">
               <button
-                className="flex items-center justify-between gap-x-0.5 rounded-md bg-gray-800 px-2 py-1 pt-2 text-[12px] hover:bg-gray-700 md:text-[11px]"
+                className="flex cursor-pointer items-center justify-between gap-x-0.5 rounded-md bg-gray-800 px-2 py-1 pt-2 text-[12px] transition-colors duration-700 ease-in-out hover:bg-gray-700 md:text-[11px]"
                 onClick={() => {
                   navigator.clipboard.writeText(
                     'nouran-al-sharawneh@hotmail.com',
@@ -48,7 +48,7 @@ const GetInTouch = () => {
             <hr />
             <div className="flex cursor-pointer items-center justify-between pt-3">
               <a
-                className="flex items-center justify-between gap-1 rounded-md bg-blue-800 px-2 py-1 text-[12px] hover:bg-blue-900"
+                className="flex items-center justify-between gap-1 rounded-md bg-blue-800 px-2 py-1 text-[12px] transition-colors duration-700 ease-in-out hover:bg-blue-900"
                 href="https://sa.linkedin.com/in/nouran-alsharawneh-1b5a7824b"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -73,7 +73,7 @@ const GetInTouch = () => {
             <hr />
             <div className="flex cursor-pointer items-center justify-between pt-3">
               <a
-                className="flex items-center justify-between gap-1 rounded-md bg-green-800 px-2 py-1 text-[12px] hover:bg-green-700"
+                className="flex items-center justify-between gap-1 rounded-md bg-green-800 px-2 py-1 text-[12px] transition-colors duration-700 ease-in-out hover:bg-green-700"
                 href="https://wa.me/966507688769"
                 target="_blank"
                 rel="noopener noreferrer"

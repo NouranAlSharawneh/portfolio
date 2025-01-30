@@ -2,7 +2,7 @@ import AboutImg from '../../public/assets/pfp.jpg';
 const AboutImage = () => {
   return (
     <div
-      className="w-full rounded-3xl bg-cover bg-center bg-no-repeat px-7 py-4 sepia-40"
+      className="w-full rounded-3xl bg-gray-500 bg-cover bg-center bg-no-repeat px-7 py-4 grayscale filter"
       style={{ backgroundImage: `url(${AboutImg})` }}
     >
       <div className="flex h-full flex-col gap-50 text-white md:justify-between">

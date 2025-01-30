@@ -3,7 +3,7 @@ import Title from '../ui/Title';
 
 const SkillsCat = () => {
   return (
-    <div className="grid grid-rows-[0.5fr_1fr_1fr] gap-2">
+    <div className="grid grid-rows-[0.5fr_0.5fr_0.5fr] gap-2">
       <div className="border-b border-gray-600 pb-5">
         <Title title={'Experties'} />
         <p className="tracking-widest text-gray-600">
