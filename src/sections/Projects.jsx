@@ -85,7 +85,7 @@ const Projects = () => {
         <div className="flex flex-col gap-20">
           {portfolioProjects.map((project, projectIndex) => (
             <div
-              key={project.projectName}
+              key={projectIndex}
               className="sticky z-0 overflow-hidden rounded-3xl bg-gray-950 px-5 pt-5 after:pointer-events-none after:absolute after:inset-0 after:z-10 after:rounded-3xl after:outline-2 after:-outline-offset-2 after:outline-gray-600 after:content-['']"
               style={{
                 top: `calc(64px + ${projectIndex * 60}px)`,
@@ -127,10 +127,7 @@ const Projects = () => {
                               <GoArrowUpRight />
                             </a>
                           </button>
-                          <button
-                            key={link.githubLink.url}
-                            className="h-12 w-full grow items-center justify-center gap-2 rounded-xl bg-gray-100 font-semibold tracking-wide text-gray-950 md:w-auto md:px-8"
-                          >
+                          <button className="h-12 w-full grow items-center justify-center gap-2 rounded-xl bg-gray-100 font-semibold tracking-wide text-gray-950 md:w-auto md:px-8">
                             <a
                               href={link.githubLink.url}
                               className="inline-flex items-center justify-center gap-2"

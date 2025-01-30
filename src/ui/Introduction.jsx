@@ -1,6 +1,6 @@
 import { LuDot } from 'react-icons/lu';
 import ArrowDownShort from '../ui/ArrowDownShort';
-import AvatarImg from '../../public/assets/avator.png';
+import AvatarImg from '../../public/assets/iosEmoji.png';
 
 const Introduction = () => {
   return (
@@ -34,7 +34,7 @@ const Introduction = () => {
             projects.
           </p>
           <img
-            className="h-40 w-40 md:h-30 md:w-30"
+            className="h-40 w-40 rounded-full bg-gradient-to-t from-gray-800 to-gray-400 md:h-30 md:w-30"
             src={AvatarImg}
             alt="avatar"
           />
