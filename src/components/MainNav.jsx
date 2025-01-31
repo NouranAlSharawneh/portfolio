@@ -1,5 +1,6 @@
-import { GrDocumentUser } from 'react-icons/gr';
 import Logo from './Logo';
+import PropTypes from 'prop-types';
+import { GrDocumentUser } from 'react-icons/gr';
 import { BsGithub } from 'react-icons/bs';
 
 const MainNav = ({ active }) => {
@@ -66,6 +67,10 @@ const MainNav = ({ active }) => {
       </div>
     </div>
   );
+};
+
+MainNav.propTypes = {
+  active: PropTypes.string.isRequired,
 };
 
 export default MainNav;

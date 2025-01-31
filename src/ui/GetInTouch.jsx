@@ -1,5 +1,4 @@
 import { ImLinkedin2 } from 'react-icons/im';
-import ArrowDownShort from '../ui/ArrowDownShort';
 import { MdEmail } from 'react-icons/md';
 import { IoLogoWhatsapp, IoMdOpen } from 'react-icons/io';
 import { IoCopyOutline } from 'react-icons/io5';

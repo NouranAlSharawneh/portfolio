@@ -26,12 +26,12 @@ const Introduction = () => {
         </h2>
         <div className="flex flex-col items-center justify-between md:flex-row md:gap-5">
           <p className="text-wrap text-gray-600 md:text-[19px]">
-            Hi there! I'm Nouran, a 22-year-old Software Engineer with a passion
-            for web and mobile app development. I enjoy solving complex problems
-            and continuously learning new technologies to build innovative
-            solutions. I am currently seeking opportunities in software
-            development to further enhance my skills and contribute to impactful
-            projects.
+            Hi there! I&apos;m Nouran, a 22-year-old Software Engineer with a
+            passion for web and mobile app development. I enjoy solving complex
+            problems and continuously learning new technologies to build
+            innovative solutions. I am currently seeking opportunities in
+            software development to further enhance my skills and contribute to
+            impactful projects.
           </p>
 
           <div className="mt-10 flex h-50 w-70 shrink-0 items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-t from-gray-800 to-gray-400 transition-transform duration-700 ease-in-out md:mt-0 md:h-40 md:w-40 md:rounded-full">
