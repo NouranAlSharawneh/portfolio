@@ -1,7 +1,11 @@
+import { FiArrowUpCircle } from 'react-icons/fi';
+import ArrowDown from '../ui/ArrowDown';
+import { BsArrowUpCircle } from 'react-icons/bs';
+
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="flex h-9 items-center justify-center border border-gray-200 bg-gray-300">
+    <footer className="relative flex h-9 items-center justify-center border border-gray-200 bg-gray-300">
       <p className="text-sm text-gray-500">
         made with love 🤍 {year} ~
         <a
@@ -13,6 +17,13 @@ const Footer = () => {
           project repo
         </a>
       </p>
+      <div
+        title="back to top"
+        className="absolute right-5 bottom-10 animate-bounce cursor-pointer text-2xl font-thin text-gray-900 md:right-20 md:text-4xl"
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      >
+        <BsArrowUpCircle />
+      </div>
     </footer>
   );
 };
