@@ -85,7 +85,7 @@ const Skills = () => {
           </div>
           <HelloMe />
           <div className="grid grid-rows-[auto_auto_1fr] rounded-2xl bg-gray-100 px-5 text-gray-900">
-            <h4 className="pt-5 text-left text-6xl font-extrabold md:text-8xl">
+            <h4 className="pt-5 text-left text-6xl font-extrabold lg:text-8xl">
               My ToolBox
             </h4>
             <p className="-mt-3 w-60 pb-3 tracking-wide text-gray-600">
