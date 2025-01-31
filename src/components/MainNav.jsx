@@ -43,12 +43,14 @@ const MainNav = ({ active }) => {
 
       <div className="flex items-center gap-2">
         <BsGithub
+          title="my github acc."
           size={24}
-          className="cursor-pointer text-gray-800 md:h-9 md:w-9"
+          className="cursor-pointer text-gray-800 hover:text-gray-950 md:h-9 md:w-9"
           onClick={() => window.open('https://github.com/NouranAlSharawneh')}
         />
         <span
-          className="h-6 w-6 rounded-full bg-gray-800 pt-1.5 pl-1 md:h-9 md:w-9 md:pt-2 md:pl-1.5"
+          title="download cv"
+          className="h-6 w-6 cursor-pointer rounded-full bg-gray-800 pt-1.5 pl-1 hover:bg-gray-950 md:h-9 md:w-9 md:pt-2 md:pl-1.5"
           onClick={() => {
             const link = document.createElement('a');
             link.href = '../../public/pdfs/Nouran AlSharawneh CV.pdf';
@@ -59,11 +61,7 @@ const MainNav = ({ active }) => {
             document.body.removeChild(link);
           }}
         >
-          <GrDocumentUser
-            className="text-sm font-thin text-white md:text-xl"
-            cursor="pointer"
-            title="download cv"
-          />
+          <GrDocumentUser className="text-sm font-thin text-white md:text-xl" />
         </span>
       </div>
     </div>

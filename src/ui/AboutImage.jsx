@@ -2,7 +2,7 @@ import AboutImg from '../../public/assets/pfp.jpg';
 const AboutImage = () => {
   return (
     <div
-      className="w-full rounded-3xl bg-gray-500 bg-cover bg-center bg-no-repeat px-7 py-4 grayscale filter"
+      className="w-full cursor-grab rounded-3xl bg-gray-500 bg-cover bg-center bg-no-repeat px-7 py-4 grayscale filter"
       style={{ backgroundImage: `url(${AboutImg})` }}
       loading="lazy"
     >
