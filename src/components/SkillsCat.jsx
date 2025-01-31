@@ -1,17 +1,35 @@
 import { FaCircleCheck } from 'react-icons/fa6';
 import Title from '../ui/Title';
+import { ReactTyped } from 'react-typed';
 
 const SkillsCat = () => {
+  const greetings = [
+    'Hello',
+    'Hola',
+    'Bonjour',
+    'Hallo',
+    'Olá',
+    'مرحبا',
+    '안녕하세요',
+    'नमस्ते',
+  ];
   return (
     <div className="grid grid-rows-[0.5fr_0.5fr_1fr] gap-2">
-      <div className="border-b border-gray-600 pb-5">
+      {/* <div className="border-b border-gray-600 pb-5">
         <Title title={'Experties'} />
         <p className="tracking-widest text-gray-600">
           HTML, CSS, JavaScript, React.js, Next.js, Flutter, tailwind, Power
           Platforms, Agile Methodologies, Git, three.js, Figma
         </p>
+      </div> */}
+      {/* Greetings */}
+      <div className="mb-5 flex items-center justify-center rounded-3xl bg-gray-950 px-4 pt-3">
+        <p className="text-3xl tracking-widest text-gray-100">
+          <ReactTyped strings={greetings} typeSpeed={70} backSpeed={50} loop />
+        </p>
       </div>
-      <div className="border-b border-gray-600 pb-5">
+      {/* SoftSkills */}
+      <div className="border-y border-gray-600 py-5">
         <Title title={'SoftSkills'} />
         <div className="grid gap-2">
           <div className="flex gap-3">
@@ -35,6 +53,7 @@ const SkillsCat = () => {
           </div>
         </div>
       </div>
+      {/* Experince */}
       <div>
         <Title title={'Experince'} />
         <div className="grid gap-8 rounded-3xl bg-gray-950 px-4 py-3 text-gray-100 md:gap-6">
