@@ -14,7 +14,7 @@ const SkillsCat = () => {
     'नमस्ते',
   ];
   return (
-    <div className="grid grid-rows-[0.5fr_0.5fr_1fr] gap-2">
+    <div className="grid grid-rows-[0.5fr_0.5fr_1fr] gap-2 md:py-2">
       {/* <div className="border-b border-gray-600 pb-5">
         <Title title={'Experties'} />
         <p className="tracking-widest text-gray-600">
@@ -30,7 +30,13 @@ const SkillsCat = () => {
         }}
       >
         <p className="text-3xl tracking-widest text-gray-100">
-          <ReactTyped strings={greetings} typeSpeed={70} backSpeed={50} loop />
+          <ReactTyped
+            strings={greetings}
+            typeSpeed={70}
+            backSpeed={50}
+            loop
+            showCursor={false}
+          />
         </p>
       </div>
       {/* SoftSkills */}
