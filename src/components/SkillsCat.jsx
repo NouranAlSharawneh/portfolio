@@ -23,7 +23,12 @@ const SkillsCat = () => {
         </p>
       </div> */}
       {/* Greetings */}
-      <div className="mb-5 flex items-center justify-center rounded-3xl bg-gray-950 px-4 pt-3">
+      <div
+        className="mb-5 flex items-center justify-center rounded-3xl bg-gray-950 px-4 pt-3"
+        style={{
+          cursor: "url('/assets/hello.svg') 10 10, pointer",
+        }}
+      >
         <p className="text-3xl tracking-widest text-gray-100">
           <ReactTyped strings={greetings} typeSpeed={70} backSpeed={50} loop />
         </p>

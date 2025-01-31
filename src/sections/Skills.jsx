@@ -62,7 +62,7 @@ const Skills = () => {
       <div className="grid grid-cols-1 grid-rows-[1fr_0.5fr] gap-9 pt-5 pl-1 md:grid-cols-[1.5fr_0.5fr] md:grid-rows-1">
         {/* right side */}
         <div className="grid gap-3 rounded-2xl bg-gray-200 px-3 py-2 md:grid-cols-2 md:grid-rows-2">
-          <div className="relative grid gap-12 rounded-2xl bg-blue-700 px-5 pb-20 text-gray-100 md:col-span-2 md:gap-9">
+          <div className="relative grid gap-12 rounded-2xl bg-gradient-to-t from-blue-800 to-blue-600 px-5 pb-20 text-gray-100 md:col-span-2 md:gap-9">
             <div className="flex flex-col items-center justify-between pt-4 md:flex-row">
               <h4 className="text-7xl font-extrabold md:text-9xl">Education</h4>
               <p className="rounded-3xl bg-gray-900 px-4 py-1 text-xs text-gray-200 md:text-sm">

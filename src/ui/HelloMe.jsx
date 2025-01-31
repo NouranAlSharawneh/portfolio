@@ -12,7 +12,7 @@ const HelloMe = () => {
   };
   return (
     <div
-      className="relative grid h-full rounded-2xl bg-gray-300 px-5"
+      className="relative grid h-full rounded-2xl bg-gradient-to-t from-gray-400/70 to-gray-200 px-5"
       onClick={handleMouseEnter}
       onMouseEnter={handleMouseEnter}
     >
