@@ -53,7 +53,7 @@ const MainNav = ({ active }) => {
           className="h-6 w-6 cursor-pointer rounded-full bg-gray-800 pt-1.5 pl-1 hover:bg-gray-950 md:h-9 md:w-9 md:pt-2 md:pl-1.5"
           onClick={() => {
             const link = document.createElement('a');
-            link.href = '../../public/pdfs/Nouran AlSharawneh CV.pdf';
+            link.href = '/pdfs/Nouran AlSharawneh CV.pdf';
             link.setAttribute('download', 'Nouran AlSharawneh CV.pdf');
             link.style.display = 'none';
             document.body.appendChild(link);
