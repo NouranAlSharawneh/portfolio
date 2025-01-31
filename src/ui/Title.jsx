@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import ArrowDownShort from './ArrowDownShort';
 
 const Title = ({ title }) => {
@@ -10,10 +9,6 @@ const Title = ({ title }) => {
       <ArrowDownShort />
     </div>
   );
-};
-
-Title.propTypes = {
-  title: PropTypes.string.isRequired,
 };
 
 export default Title;
