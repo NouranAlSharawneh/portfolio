@@ -7,7 +7,7 @@ const Projects = () => {
     {
       id: 1,
       projectName: 'Fast Nunu Pizza',
-      projectImg: '/assets/projects/fastPizza.png',
+      projectImg: '/assets/projects/fastpizza.png',
       projectPoints: [
         'Frontend built with React and Redux Toolkit',
         'Interactive pizza menu with different options',
@@ -30,7 +30,7 @@ const Projects = () => {
     {
       id: 2,
       projectName: 'usePopCorn',
-      projectImg: '/assets/projects/usePopCorn.png',
+      projectImg: '/assets/projects/usepopcorn.png',
       projectPoints: [
         'Movie discovery platform powered by the OMDB API.',
         'Track and rate movies with localStorage support',
@@ -52,7 +52,7 @@ const Projects = () => {
     {
       id: 3,
       projectName: 'WorldWise',
-      projectImg: '/assets/projects/worldWise.png',
+      projectImg: '/assets/projects/worldwise.png',
       projectPoints: [
         'Built with React Router and Context API',
         'Optimized performance using memo, useMemo, and useCallback',
@@ -74,7 +74,7 @@ const Projects = () => {
     {
       id: 4,
       projectName: 'Higri Date Converter',
-      projectImg: '/assets/projects/higriDate.png',
+      projectImg: '/assets/projects/higridate.png',
       projectPoints: [
         'React app for converting Gregorian to Hijri dates',
         'Simple and intuitive interface for quick conversions',
