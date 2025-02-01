@@ -1,7 +1,7 @@
 import usePopcornImage from '../../public/assets/projects/usePopCorn.png';
-import FastPizzaImage from '../../public/assets/projects/FastPizza.png';
-import WorldWiseImage from '../../public/assets/projects/WorldWise.png';
-import HigriDateImage from '../../public/assets/projects/HigriDate.png';
+import FastPizzaImage from '../../public/assets/projects/fastPizza.png';
+import WorldWiseImage from '../../public/assets/projects/worldWise.png';
+import HigriDateImage from '../../public/assets/projects/higriDate.png';
 import AppebiteImage from '../../public/assets/projects/appebite.png';
 
 export const portfolioProjects = [
