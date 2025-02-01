@@ -9,6 +9,9 @@ const HelloMe = () => {
       (entries) => {
         if (entries[0].isIntersecting) {
           setShowText(true);
+          setTimeout(() => {
+            setShowText(false);
+          }, 3000);
         } else {
           setShowText(false);
         }
