@@ -12,7 +12,7 @@ const Projects = () => {
     {
       id: 1,
       projectName: 'Fast Nunu Pizza',
-      projectImg: FastPizzaImage,
+      projectImg: '../../public/assets/projects/fastPizza.png',
       projectPoints: [
         'Frontend built with React and Redux Toolkit',
         'Interactive pizza menu with different options',
@@ -35,7 +35,7 @@ const Projects = () => {
     {
       id: 2,
       projectName: 'usePopCorn',
-      projectImg: usePopcornImage,
+      projectImg: '../../public/assets/projects/usePopCorn.png',
       projectPoints: [
         'Movie discovery platform powered by the OMDB API.',
         'Track and rate movies with localStorage support',
@@ -57,7 +57,7 @@ const Projects = () => {
     {
       id: 3,
       projectName: WorldWiseImage,
-      projectImg: '/assets/projects/worldWise.png',
+      projectImg: '../../public/assets/projects/worldWise.png',
       projectPoints: [
         'Built with React Router and Context API',
         'Optimized performance using memo, useMemo, and useCallback',
@@ -79,7 +79,7 @@ const Projects = () => {
     {
       id: 4,
       projectName: 'Higri Date Converter',
-      projectImg: HigriDateImage,
+      projectImg: '../../public/assets/projects/higriDate.png',
       projectPoints: [
         'React app for converting Gregorian to Hijri dates',
         'Simple and intuitive interface for quick conversions',
@@ -101,7 +101,7 @@ const Projects = () => {
     {
       id: 5,
       projectName: 'Appebite',
-      projectImg: AppebiteImage,
+      projectImg: '../../public/assets/projects/appebite.png',
       projectPoints: [
         'Flutter app with diverse cuisines and AI-powered recipe generation',
         'OpenAI API for ingredient alternatives and personalized recipes',
