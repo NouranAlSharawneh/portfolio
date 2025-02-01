@@ -82,6 +82,7 @@ const Projects = () => {
                 </div>
                 <div>
                   <img
+                    loading="lazy"
                     src={project.projectImg}
                     alt={project.projectName}
                     className="mt-8 -mb-4 lg:ml-22"

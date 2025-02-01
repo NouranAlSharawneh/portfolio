@@ -1,5 +1,3 @@
-import { FiArrowUpCircle } from 'react-icons/fi';
-import ArrowDown from '../ui/ArrowDown';
 import { BsArrowUpCircle } from 'react-icons/bs';
 
 const Footer = () => {

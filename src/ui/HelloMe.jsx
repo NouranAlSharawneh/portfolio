@@ -1,8 +1,23 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import AvatorImg from '../../public/assets/me.png';
 
 const HelloMe = () => {
   const [showText, setShowText] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setShowText(true);
+        } else {
+          setShowText(false);
+        }
+      },
+      { rootMargin: '0px 0px -40% 0px' },
+    );
+    observer.observe(document.querySelector('.hello-me'));
+    return () => observer.disconnect();
+  }, []);
 
   const handleMouseEnter = () => {
     setShowText(true);
@@ -12,7 +27,7 @@ const HelloMe = () => {
   };
   return (
     <div
-      className="relative grid h-full overflow-hidden rounded-2xl bg-gradient-to-t from-gray-400/70 to-gray-200 px-5"
+      className="hello-me relative grid h-full overflow-hidden rounded-2xl bg-gradient-to-t from-gray-400/70 to-gray-200 px-5"
       onClick={handleMouseEnter}
       onMouseEnter={handleMouseEnter}
     >

@@ -43,7 +43,7 @@ To run the project locally, follow these steps:
    npm run dev
    ```
 
-5. Open your browser and visit `http://localhost:3000` to see the site.
+5. Open your browser and visit `http://localhost:5173` to see the site.
 
 ## Build
 
