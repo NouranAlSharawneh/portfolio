@@ -1,14 +1,8 @@
-import usePopcornImage from '/public/assets/projects/usePopCorn.png';
-import FastPizzaImage from '/public/assets/projects/fastPizza.png';
-import WorldWiseImage from '/public/assets/projects/worldWise.png';
-import HigriDateImage from '/public/assets/projects/higriDate.png';
-import AppebiteImage from '/public/assets/projects/appebite.png';
-
 export const portfolioProjects = [
   {
     id: 1,
     projectName: 'Fast Nunu Pizza',
-    projectImg: FastPizzaImage,
+    projectImg: '/assets/projects/fastPizza.png',
     projectPoints: [
       'Frontend built with React and Redux Toolkit',
       'Interactive pizza menu with different options',
@@ -31,7 +25,7 @@ export const portfolioProjects = [
   {
     id: 2,
     projectName: 'usePopCorn',
-    projectImg: usePopcornImage,
+    projectImg: '/assets/projects/usePopCorn.png',
     projectPoints: [
       'Movie discovery platform powered by the OMDB API.',
       'Track and rate movies with localStorage support',
@@ -53,7 +47,7 @@ export const portfolioProjects = [
   {
     id: 3,
     projectName: 'WorldWise',
-    projectImg: WorldWiseImage,
+    projectImg: '/assets/projects/worldWise.png',
     projectPoints: [
       'Built with React Router and Context API',
       'Optimized performance using memo, useMemo, and useCallback',
@@ -75,7 +69,7 @@ export const portfolioProjects = [
   {
     id: 4,
     projectName: 'Higri Date Converter',
-    projectImg: HigriDateImage,
+    projectImg: '/assets/projects/higriDate.png',
     projectPoints: [
       'React app for converting Gregorian to Hijri dates',
       'Simple and intuitive interface for quick conversions',
@@ -97,7 +91,7 @@ export const portfolioProjects = [
   {
     id: 5,
     projectName: 'Appebite',
-    projectImg: AppebiteImage,
+    projectImg: '/assets/projects/appebite.png',
     projectPoints: [
       'Flutter app with diverse cuisines and AI-powered recipe generation',
       'OpenAI API for ingredient alternatives and personalized recipes',
