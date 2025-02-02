@@ -4,7 +4,6 @@ import { GoArrowUpRight } from 'react-icons/go';
 import { portfolioProjects } from '../data/projects';
 
 const Projects = () => {
-  console.log(portfolioProjects[3].projectImg);
   return (
     <section
       id="projects"
