@@ -81,9 +81,10 @@ const Projects = () => {
                   </div>
                 </div>
                 <div>
+                  {console.log(project.projectImg)}
                   <img
                     loading="lazy"
-                    src={project.projectImg}
+                    src={`../../public/assets/${project.projectImg}`}
                     alt={project.projectName}
                     className="mt-8 -mb-4 lg:ml-22"
                   />
