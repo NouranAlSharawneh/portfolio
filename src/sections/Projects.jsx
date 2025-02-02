@@ -1,7 +1,7 @@
 import MainNav from '../components/MainNav';
 import { FaCircleCheck } from 'react-icons/fa6';
 import { GoArrowUpRight } from 'react-icons/go';
-import { portfolioProjects } from '../data/projects';
+import { portfolioProjects } from '../data/projectsData';
 
 const Projects = () => {
   return (
