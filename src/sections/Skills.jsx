@@ -77,10 +77,6 @@ const Skills = () => {
                 <p>BSc. Software Engineering</p>
                 <p>(GPA 3.89/4.00)</p>
               </div>
-              {/* <img
-                src={MointerImg}
-                className="absolute right-[-10px] bottom-[-22%] h-50 w-40 rotate-[-10deg] md:right-[30px] md:bottom-[-35%] md:h-130 md:w-130"
-              /> */}
             </div>
           </div>
           <HelloMe />

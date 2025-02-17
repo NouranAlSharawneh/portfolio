@@ -4,6 +4,7 @@ Hello and weclome to my personal portfolio website that showcases some of my pro
 
 ## Live Site
 
+![Overview of the site](<public/assets/Read Me.png>)
 You can view the live site at [https://nouranalsharawneh.vercel.app/](https://nouranalsharawneh.vercel.app/)
 
 ## Features
